@@ -8,6 +8,6 @@ RUN git clone --progress https://github.com/XTLS/Xray-core.git . && \
 FROM alpine
 COPY --from=builder /tmp/xray /usr/bin
 
-ADD xray.sh /xray.sh
-RUN chmod +x /xray.sh
-CMD /xray.sh
+ADD ray.sh /ray.sh
+RUN chmod +x /ray.sh
+CMD /ray.sh
